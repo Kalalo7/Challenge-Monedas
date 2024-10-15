@@ -40,11 +40,7 @@ public class Principal {
                     ConvertirMoneda.convertir("CLP", "USD", consulta, lectura);
                     break;
                 case 7:
-                    System.out.println("Ingrese el código de la moneda de origen (usd, ars, eur, clp...:");
-                    String monedaOrigen = lectura.nextLine().toUpperCase();
-                    System.out.println("Ingrese el código de la moneda de destino (usd, ars, eur, clp...:");
-                    String monedaDestino = lectura.nextLine().toUpperCase();
-                    ConvertirMoneda.convertir(monedaOrigen, monedaDestino, consulta, lectura);
+                    ConvertirMoneda.convertirOtraMoneda(consulta,lectura);
                     break;
                 case 8:
                     System.out.println("Saliendo del sistema...");

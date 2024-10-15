@@ -19,6 +19,5 @@ public class ConvertirMoneda {
             System.out.println("Ingrese el código de la moneda que desea obtener");
             String monedaObjetivo = lectura.nextLine().toUpperCase();
             convertir(monedaBase, monedaObjetivo, consulta, lectura);
-
     }
 }
