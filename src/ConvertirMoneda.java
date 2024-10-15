@@ -6,11 +6,11 @@ public class ConvertirMoneda {
         double cantidadConvertida;
 
         Monedas monedas = consulta.buscarMoneda(monedaBase, monedaTarget);
-        System.out.println("La tasa de conversión al día de hoy es de\n1 "+monedaBase+ " = "+monedas.conversion_rate()+" "+monedaTarget);
-        System.out.println("Ingrese la cantidad de "+monedaBase+"que desea convertir");
+        System.out.println("La tasa de conversión al día de hoy " + "es de\n1 "+monedaBase+ " = "+monedas.conversion_rate()+" "+monedaTarget);
+        System.out.println("Ingrese la cantidad de "+monedaBase+" que desea convertir");
         cantidad = Double.parseDouble(lectura.nextLine());
         cantidadConvertida = cantidad * monedas.conversion_rate();
-        System.out.println(cantidad+" "+monedaBase+ " = "+monedaTarget+ " "+ monedas.target_code());
+        System.out.println(cantidad+" "+monedaBase+ " = " +cantidadConvertida+" "+ monedas.target_code());
     }
 
         public static void convertirOtraMoneda(ConsultaMoneda consulta, Scanner lectura) {
